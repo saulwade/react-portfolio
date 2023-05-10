@@ -129,4 +129,10 @@ main {
       grid-template-columns: 1fr;
     }
   }
+
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
   
