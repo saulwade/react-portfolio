@@ -15,10 +15,10 @@ function App() {
           <Navigation />
           <main>
             <Switch>
-              <Route exact path="/" component={AboutMe} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/resume" component={Resume} />
+              <Route exact path="/" component={aboutme} />
+              <Route path="/portfolio" component={portfolio} />
+              <Route path="/contact" component={contact} />
+              <Route path="/resume" component={resume} />
             </Switch>
           </main>
           <Footer />
