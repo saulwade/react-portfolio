@@ -43,6 +43,90 @@ body {
   nav ul li a.active {
     border-bottom: 2px solid #333;
   }
-  
+
   /* Main content */
+main {
+    padding: 2rem;
+  }
+  
+  /* About Me */
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-me img {
+    border-radius: 50%;
+    margin-right: 2rem;
+    width: 150px;
+  }
+  
+  /* Portfolio */
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .project img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact */
+  .contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .contact form textarea {
+    grid-column: span 2;
+  }
+  
+  /* Resume */
+  .resume ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resume ul li {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    .about-me {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-me img {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
+  
+    .contact form {
+      grid-template-columns: 1fr;
+    }
+  }
   
